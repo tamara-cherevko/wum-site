@@ -3,7 +3,7 @@
 }
 
 body{
-    background: #5C4F39 url(./background.png) no-repeat;
+    background: #5C4F39 url(images/background.png) no-repeat;
     background-size: 100%;
     font-size: 16px;
     font-family: 'Open Sans';
