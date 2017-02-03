@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+}
+
+body{
+    background: #5C4F39 url(./background.png) no-repeat;
+    background-size: 100%;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    color:#fff;
+    font-weight: 300;
+    position: relative;
+    padding: 1rem;
+}
+
+@media (min-width: 340px) {
+    body {
+        background-size: 300%;
+    }
+}
+
+@media (min-width: 580px) {
+    body {
+        background-size: 200%;
+    }
+}
+
+@media (min-width: 780px) {
+    body {
+        background-size: 150%;
+    }
+}
+
+@media (min-width: 961px){
+    body {
+        background-size: 120%;
+    }
+}
+
+@media (min-width: 1125px){
+    body {
+        background-size: 100%;
+    }
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo svg{
+    display: inline-block;
+    fill: white;
+    width: 5rem;
+    height: 5rem;
+}
+
+@media (min-width: 570px) {
+    .logo svg{
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+.header__title{
+    text-align: center;
+}
+
+@media (min-width: 780px) {
+    .header__title{
+        position: absolute;
+        top: 0;
+        left: 1rem;
+    }
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 1rem 0 0;
+}
+
+@media (min-width: 780px) {
+    h1{
+        font-size: 4rem;
+        text-align: left;
+    }
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+@media (min-width: 780px) {
+    h2{
+        font-size: 2rem;
+    }
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+main {
+    margin: 2rem 0;
+	display: block;
+	padding: 0 20%;
+}
+
+@media (min-width: 780px) {
+    main {
+        margin: 4rem 0;
+    }
+}
+
+main h2{
+    text-align: center;
+}
+
+main p{
+    text-align: center;
+    line-height: 1.6;
+}
+
+.divider{
+    display: block;
+    margin: 3rem 0;
+}
+
+.divider:after{
+    content: '';
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+    height: 1px;
+    background: #fff;
+}
+
+form{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+@media (min-width: 780px) {
+    form {
+        margin: 3rem 0;
+    }
+}
+
+input{
+    border: none;
+    height: 40px;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1;
+    color: black;
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+button {
+    height: 40px;
+    border: none;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0 1rem;
+    background: #EBB089;
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 480px) {
+    input {
+        display: inline-block;
+        vertical-align: middle;
+        width: 40%;
+        margin: 0;
+    }
+
+    button{
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 0.5rem;
+        width: auto;
+    }
+}
+
+button:hover{
+    background: #EA955D;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.social{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    margin: 0 1rem;
+    opacity: 0.8;
+}
+
+.facebook{
+    background-image: url(facebook.svg);
+}
+
+.instagram{
+    background-image: url(instagram.svg);
+}
+
+.twitter{
+    background-image: url(twitter.svg);
+}
