@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="-w3rSC-3hGGFY_nTlt92uHxnVqfDz4lMTQgVDmoWPGk"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WUM</title>
+    <title>Warm Ukrainian Manufacture</title>
     <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
@@ -54,9 +54,12 @@
             та кожну думку. Щоб слідуквати за нашими новинами або поділитися своїми ідеями, залиште свій email,
             ми обов’язкого з Вами зв’яжемося!</p>
 
-        <form action="">
-            <input type="text" placeholder="some@mail.com">
-            <button disabled>Надіслати</button>
+        <form action="subscribe.php" method="post">
+            <?php if (isset($_GET['subscribed'])) {?>
+                <p class="success">Ваша електронна адреса успішно додана. Дякуємо!</p>
+            <?php } ?>
+            <input type="text" name="email" placeholder="some@mail.com">
+            <button type="submit">Надіслати</button>
         </form>
     </main>
     <footer>
